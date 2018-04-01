@@ -1,0 +1,21 @@
+{application, kcp_erlang,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { kcp_erlang_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[
+    {callback, kcp_erlang_callback}
+    ,{callback_opts, []}
+    ,{opts, []}
+    ,{max_connect, 10}
+  ]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
